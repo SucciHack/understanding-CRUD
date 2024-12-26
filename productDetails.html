@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ProductDetails</title>
+</head>
+<body>
+    <div id="productDetails"></div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const productDetails = JSON.parse(localStorage.getItem('productDetails'));
+        if (productDetails) {
+            const productDetailsContainer = document.getElementById('productDetails');
+            const productDetailTemplate = `
+            <div class="productDetailsContainer">
+                <h1>Products Details</h1>
+            <div class="productDetails" data-id="${productDetails.id}">
+                <img src="${productDetails.image}" alt="${productDetails.name}">
+                <div class="productDetailsText">
+                    <h1>${productDetails.name}</h1>
+                    <p>${productDetails.description}</p>
+                    <p>$ 49.75</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            </div>
+            `;
+            productDetailsContainer.insertAdjacentHTML('beforeend', productDetailTemplate);
+        } else {
+            productDetailsContainer.innerHTML = '<p>No product details found.</p>';
+        }
+    });
+</script>
+</html>

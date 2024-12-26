@@ -285,6 +285,9 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .container .rightSide .products :hover {
+    cursor: pointer;
+  }
 }
 
 .slideNav {
@@ -364,4 +367,59 @@ body {
   .filterSection button {
     font-size: 0.8rem;
   }
+}
+
+.productDetailsContainer {
+  background: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 10px;
+  height: 80vh;
+}
+.productDetailsContainer h1 {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 2rem;
+}
+.productDetailsContainer .productDetails {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.productDetailsContainer .productDetails img {
+  width: 50%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.productDetailsContainer .productDetails h1 {
+  text-align: left;
+}
+.productDetailsContainer .productDetails .productDetailsText {
+  width: 50%;
+}
+.productDetailsContainer .productDetails .productDetailsText h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.productDetailsContainer .productDetails .productDetailsText p {
+  font-size: 1rem;
+}
+.productDetailsContainer .productDetails .productDetailsText :nth-last-of-type(1) {
+  font-size: 1.5rem;
+  color: #4DA181;
+  font-weight: bold;
+}
+.productDetailsContainer .productDetails .productDetailsText button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
