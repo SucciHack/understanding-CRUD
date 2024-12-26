@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    // position: relative;
+    .leftSide{
+        float: left;
+        width: 30%;
+        min-height: 90vh;
+        background: #F2F4F7;
+        padding: 20px;
+        .leftSideContent{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            .card{
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                width: 200px;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                cursor: pointer;
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 5px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+    .rightSide{
+        width: 70%;
+        min-height: 90vh;
+        padding: 20px;
+            .products{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                .product{
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 5px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        
+    }
+    @media (max-width: 900px){
+        flex-direction: column;
+        .leftSide{
+            display: none;
+        }
+        .rightSide{
+            width: 100%;
+            .products{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+    }
+    @media (max-width: 480px){
+        flex-direction: column;
+        .leftSide{
+            display: none;
+        }
+        .rightSide{
+            width: 100%;
+            .products{
+                grid-template-columns: repeat(1, 1fr);
+                .product{
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PickBazar</title>
+</head>
+<body>
+    <nav>
+        <div class="logoSide">
+            <img src="./images/Logo-new (1).png" alt="">
+            <button class="categoryBtn">Furniture <span><i class='bx bxs-down-arrow'></i></span></button>
+        </div>
+        <div class="contentSide">
+                <a href="#">Shops</a>
+                <a href="#">Offers</a>
+                <a href="#">Contact</a>
+                <a href="#">Pages</a>
+                <a href="#"><i class='bx bx-search' id="bx-search"></i></a>
+                <button class="joinBtn">Join</button>
+                <button class="becomeasellerBtn">Become a Seller</button>
+        </div>
+    </nav>
+    <div class="search">
+        <div class="searchDiv">
+            <a href="#" id="search"><i class='bx bx-search'></i></a>
+            <input type="text" placeholder="Search for products, brands and more...">
+        </div>
+        <button id="close"><i class='bx bx-x' ></i></button>
+    </div>
+    <div class="container">
+        <div class="leftSide">
+            <div class="leftSideContent">
+                <div class="card" id="bed">
+                    <img src="./images/image (4).svg" alt="">
+                    <p>Bed</p>
+                </div>
+                <div class="card" id="food">
+                    <img src="./images/image (5).svg" alt="">
+                    <p>Food</p>
+                </div>
+                <div class="card" id="cosmetics">
+                    <img src="./images/image (6).svg" alt="">
+                    <p>Consmetics</p>
+                </div>
+                <div class="card" id="table">
+                    <img src="./images/image (7).svg" alt="">
+                    <p>Table</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="rightSideContent">
+                <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <img src="./images/image.png" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="./images/furniture-banner-1 (1).png" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="./images/furniture-banner-2 (1).png" alt="">
+                              </li>
+                          </ul>
+                    </div>
+                  </section>
+                  <div class="filterSection">
+                    <button id="slideNavShow">
+                        <i class='bx bx-filter-alt'></i>
+                        <span>Filter</span>
+                    </button>
+                    <button class="Furniture">
+                        <i class='bx bx-grid-alt'></i>
+                    </button>
+                  </div>
+                <div class="products">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideNav">
+        <div class="slideNavContent">
+        <div class="slideNavContentLeftContentHeader">
+                        <h1>Furniture</h1>
+                        <button class="closeBtn"><i class='bx bx-x'></i></button>
+                    </div>
+                    <div class="slideNavContentLeftContentBody">
+                        <a href="#">Bed</a>
+                        <a href="#">Table</a>
+                        <a href="#">Sofa</a>
+                        <a href="#">Chair</a>
+                        <a href="#">Dining Table</a>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="app.js"></script>
+</html>
