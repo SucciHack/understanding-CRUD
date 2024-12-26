@@ -285,9 +285,6 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .container .rightSide .products :hover {
-    cursor: pointer;
-  }
 }
 
 .slideNav {
