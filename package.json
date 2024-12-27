@@ -15,6 +15,6 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "build": "npm run build"
+    "build": "webpack --config webpack.config.js"
   }
 }
