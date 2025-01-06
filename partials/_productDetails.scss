@@ -1,33 +1,33 @@
+body{
+    background: #FFFEFE;
+}
 .productDetailsContainer{
-    background: white;
-    width: 80%;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
     margin-top: 3rem;
     border-radius: 10px;
-    height: 80vh;
-    h1{
-        text-align: center;
-        padding-top: 5rem;
-        font-size: 2rem;
-    }
+    padding-bottom: 2rem;
     .productDetails{
         padding: 3rem;
         display: flex;
-        align-items: center;
         gap: 1rem;
-        img{
+        align-items: center;
+        height: 55vh;
+        .productDetailsImage{
             width: 50%;
-            height:400px;
-            object-fit: cover;
-            object-position: center;
-        }
-        h1{
-            text-align: left;
+            img{
+                width: 80%;
+                display: block;
+                mix-blend-mode: multiply;
+            }
         }
         .productDetailsText{
             width: 50%;
-            h1{
-                font-size: 2rem;
+            border-bottom: 1px solid #4da181de;
+            padding-bottom: 1rem;
+            .heading{
+                font-size: 3rem;
+                color: black;
                 margin: 0;
                 padding: 0;
             }
@@ -38,14 +38,50 @@
                 color: #4DA181;
                 font-weight: bold;
             }
-            button{
-                padding: .5rem;
+            .pieces{
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
+            .addToCartBtn{
                 border: none;
-                border-radius: 10px;
-                font-size: 1.5rem;
+                border-radius: 5px;
+                font-size: 1rem;
                 cursor: pointer;
+                background: #4DA181;
+                color: white;
+                padding: 1rem 5rem;
                 margin-top: 1rem;
             }
         }
+    }
+}
+.productDetailsReview{
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #4da181de;
+    border-bottom: 1px solid #4da181de;
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+    .writeReviewBtn{
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        background: #4DA181;
+        color: white;
+        padding: 1rem 5rem;
+        margin-top: 1rem;
+    }
+}
+.productDetailsRelated{
+    border-bottom: 1px solid #4da181de;
+    h1{
+        margin: 0;
+        padding: 1rem;
     }
 }

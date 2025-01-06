@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>PickBazar</title>
 </head>
@@ -35,24 +36,41 @@
         <div class="leftSide">
             <div class="leftSideContent">
                 <div class="card" id="bed">
-                    <img src="./images/image (4).svg" alt="">
+                    <i class="fa-solid fa-bed"></i>
                     <p>Bed</p>
                 </div>
                 <div class="card" id="food">
-                    <img src="./images/image (5).svg" alt="">
+                    <i class="fa-solid fa-bowl-food"></i>
                     <p>Food</p>
                 </div>
                 <div class="card" id="cosmetics">
-                    <img src="./images/image (6).svg" alt="">
+                    <i class="fa-solid fa-bottle-water"></i>
                     <p>Consmetics</p>
                 </div>
                 <div class="card" id="table">
-                    <img src="./images/image (7).svg" alt="">
+                    <i class="fa-solid fa-kitchen-set"></i>
                     <p>Table</p>
                 </div>
             </div>
         </div>
         <div class="rightSide">
+            <div class="cartContainer">
+                <div class="cartHeader">
+                    <h1>Cart</h1>
+                    <button class="closeCart"><i class='bx bx-x'></i></button>
+                </div>
+                <div class="cartItems">
+                    <div class="cartItem">
+                        <img src="./images/andes_wide.png" alt="">
+                        <div class="cartItemContent">
+                            <h1>Product Name</h1>
+                            <p>Price: $100</p>
+                            <p>Quantity: 1</p>
+                            <button class="removeItem">removeItem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="rightSideContent">
                 <section id="image-carousel" class="splide" aria-label="Beautiful Images">
                     <div class="splide__track">
@@ -92,9 +110,9 @@
                         <button class="closeBtn"><i class='bx bx-x'></i></button>
                     </div>
                     <div class="slideNavContentLeftContentBody">
-                        <a href="#">Bed</a>
-                        <a href="#">Table</a>
-                        <a href="#">Sofa</a>
+                        <a href="#" id="bed">Beds</a>
+                        <a href="#" id="food">Food</a>
+                        <a href="#" id="cosmetics">Sofa</a>
                         <a href="#">Chair</a>
                         <a href="#">Dining Table</a>
     </div>

@@ -6,7 +6,10 @@ nav{
     background-color: #fff;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     a{
         color: black;
         text-decoration: none;

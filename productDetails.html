@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>ProductDetails</title>
 </head>
 <body>
+    <nav>
+        <div class="logoSide">
+            <img src="./images/Logo-new (1).png" alt="">
+            <button class="categoryBtn">Furniture <span><i class='bx bxs-down-arrow'></i></span></button>
+        </div>
+        <div class="contentSide">
+                <a href="#">Shops</a>
+                <a href="#">Offers</a>
+                <a href="#">Contact</a>
+                <a href="#">Pages</a>
+                <a href="#"><i class='bx bx-search' id="bx-search"></i></a>
+                <button class="joinBtn">Join</button>
+                <button class="becomeasellerBtn">Become a Seller</button>
+        </div>
+    </nav>
+    <div class="search">
+        <div class="searchDiv">
+            <a href="#" id="search"><i class='bx bx-search'></i></a>
+            <input id="searchInput" type="text" placeholder="Search for products, brands and more...">
+        </div>
+        <button id="close"><i class='bx bx-x' ></i></button>
+    </div>
     <div id="productDetails"></div>
 
 </body>
@@ -18,17 +41,28 @@
             const productDetailsContainer = document.getElementById('productDetails');
             const productDetailTemplate = `
             <div class="productDetailsContainer">
-                <h1>Products Details</h1>
             <div class="productDetails" data-id="${productDetails.id}">
-                <img src="${productDetails.image}" alt="${productDetails.name}">
+                <div class="productDetailsImage">
+                    <img src="${productDetails.image}" alt="${productDetails.name}">
+                </div>
                 <div class="productDetailsText">
-                    <h1>${productDetails.name}</h1>
+                    <h1 class="heading">${productDetails.name}</h1>
                     <p>${productDetails.description}</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quisquam optio ut voluptatem quam, aliquid nesciunt culpa harum reiciendis asperiores labore dolore eligendi doloribus. Pariatur voluptatem nihil atque veniam ab.</p>
                     <p>$ 49.75</p>
-                    <button>Add to Cart</button>
+                    <button class="addToCartBtn">Add to Cart</button>
+                    <span class="pieces">30 pieces available</span>
                 </div>
             </div>
             </div>
+            <div class="productDetailsReview">
+                    <h2>Reviews</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <button class="writeReviewBtn">Write a Review</button>
+                </div>
+                <div class="productDetailsRelated">
+                    <h1>Related Products<h1>
+                </div>
             `;
             productDetailsContainer.insertAdjacentHTML('beforeend', productDetailTemplate);
         } else {
@@ -36,4 +70,5 @@
         }
     });
 </script>
+<!-- <script src="app.js"></script> -->
 </html>
